@@ -53,7 +53,7 @@ To avoid ambiguity and ensure consistent understanding, we have defined a set of
 Based on the domain relationships, domain roles, and invariants defined in Section 2, the system is decomposed into bounded contexts that separate responsibilities according to ownership of rules and data. 
 
 <p align="center">
-  <img src="./Diagrams/Current Bounded Context.jpg" alt="System Architecture" width="500"/>
+  <img src="./Diagrams/Current Bounded Context.jpg" alt="System Architecture"/>
   <br>
   <em>Diagram: Bounded Context (Current Scope)</em>
 </p>
