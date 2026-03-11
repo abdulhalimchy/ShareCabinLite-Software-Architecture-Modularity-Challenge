@@ -57,3 +57,51 @@ Based on the domain relationships, domain roles, and invariants defined in Secti
   <br>
   <em>Diagram: Bounded Context (Current Scope)</em>
 </p>
+
+### Context Overview
+| Bounded Context | Responsibility | Core Concepts |
+|-----------------|---------------|---------------|
+| Identity & Authentication | Manages authentication processes. Provides authenticated user information to other contexts. | User, Credentials, Authentication |
+| Family | Handles family creation, memberships, roles, and invitations. Ensures governance rules within families. | Family, Family Member, Role, Invitation |
+| Property | Manages properties, ownership relationships, and access rights granted to families. | Property, Ownership, Access Grant |
+| Reservation | Handles reservation creation and ensures reservation rules, such as preventing overlapping bookings. | Reservation Property, Reservation Time |
+| Notification | Sends notifications related to events such as invitations or reservations. | Notifications |
+| Reporting | Aggregates system data to generate usage statistics and reports about reservations and property usage. | Report, Usage |
+
+
+## Architecture Design & Decisions
+ShareCabin Lite is designed as a modular monolith. In this architectural style, the system is deployed as a single application, but its internal structure is divided into clearly separated modules that correspond to the identified bounded contexts.
+
+#### Overall, the modular monolith was chosen because it provides:
+- Strong data consistency (prevent reservation conflicts & enforce ownership rules)
+- Simpler transactions (no distributed complexity)
+- Lower operational overhead (easier deployment, monitoring, and maintenance)
+- Modular & future-extractable to microservices 
+
+<br />
+
+<p align="center">
+  <img src="./Diagrams/C4 System Context Diagram.jpg" alt="System Architecture"/>
+  <br>
+  <em>Diagram: C4 System Context Diagram</em>
+</p>
+
+<br />
+
+<p align="center">
+  <img src="./Diagrams/C4 Container Diagram (1).jpg" alt="System Architecture"/>
+  <br>
+  <em>Diagram: C4 Container Diagram</em>
+</p>
+
+<br />
+
+<p align="center">
+  <img src="./Diagrams/C4 Component Diagram White Background.jpg" alt="System Architecture"/>
+  <br>
+  <em>Diagram: C4 Component Diagram</em>
+</p>
+
+<br />
+
+## Detailed flow of each context (Coming soon..)
