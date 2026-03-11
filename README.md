@@ -1,6 +1,12 @@
 # ShareCabin Lite - Modular Challenge (Software Architecture)
 This repository presents the proposed software architecture for ShareCabin Lite, a system designed to manage reservations and shared access to leisure properties such as cabins or cottages. The system enables users belonging to different families or groups to coordinate property usage through a shared reservation system while enforcing clear governance rules and access control.
 
+<p align="center">
+  <img src="./Diagrams/C4 System Context Diagram.jpg" alt="System Architecture"/>
+  <br>
+  <em>Diagram: C4 System Context Diagram</em>
+</p>
+
 ## In Scope, Out of Scope & Future Scope
 
 ### In Scope:
@@ -77,14 +83,6 @@ ShareCabin Lite is designed as a modular monolith. In this architectural style, 
 - Simpler transactions (no distributed complexity)
 - Lower operational overhead (easier deployment, monitoring, and maintenance)
 - Modular & future-extractable to microservices 
-
-<br />
-
-<p align="center">
-  <img src="./Diagrams/C4 System Context Diagram.jpg" alt="System Architecture"/>
-  <br>
-  <em>Diagram: C4 System Context Diagram</em>
-</p>
 
 <br />
 
